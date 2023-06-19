@@ -1,0 +1,344 @@
+* {
+    overflow: hidden;
+    font-family: rajdhani;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: rajdhani;
+    src: url(../fonts/Rajdhani-Regular.ttf);
+}
+
+
+
+body {
+    margin: 0;
+    background: #ede9d0;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+    width: 80vw;
+    border: solid 3px #eb5945;
+    border-radius: 20px;
+    background-color: #ede9d0;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    height: 60vh;
+    width: 60vw;
+    min-height: calc(300px + 5vh);
+    border-left: solid 3px #eb5945;
+    border-right: solid 3px #eb5945;
+
+}
+
+
+.left,
+.right {
+    min-width: 200px;
+    padding: 0 1vw;
+}
+
+.center {
+    width: 7% !important;
+    min-width: 75px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.left,
+.right,
+.center {
+    min-height: calc(300px + 5vh);
+    background-color: #fff5f1;
+}
+
+
+.computerName,
+.playerName,
+.score {
+    margin: 0 1vw;
+    font-size: 16pt;
+    padding-top: 2vh;
+}
+
+.score {
+    color: #eb5945;
+    font-size: 24pt;
+    font-weight: 900;
+    margin: 0 5vw;
+    border: none;
+}
+
+.top > div {
+    width: 27.5vw;
+}
+
+img {
+    max-width: 100%;
+    max-height: 50vh;
+    margin: 2vh 0;
+}
+
+.rightImg,
+.leftImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+}
+
+.imgPlayer > img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.playerName,
+.computerName {
+    white-space: nowrap;
+}
+
+.playerName {
+    text-align: right;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5vw !important;
+}
+
+.bottom {
+    display: flex;
+    padding: 0 0 2vh 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 60vw;
+    background-color: beige;
+    border-top: solid 3px #eb5945;
+    border-right: solid 3px #eb5945;
+    border-left: solid 3px #eb5945;
+}
+
+.description {
+    padding: 2vh 2vw 0 2vw;
+    text-align: center;
+    height: 65px;
+}
+
+.buttonsPlay {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    font-size: 18px;
+    padding: 2px 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    background-color: #bb8377;
+    position: fixed;
+    bottom: 0;
+    padding: 1vh 0;
+    width: 100%;
+}
+
+footer > * {
+    margin: 0;
+    font-size: 2vh;
+}
+
+@media (max-width: 950px), (max-height: 725px) {
+    h1 {
+        min-height: 3vh;
+        font-size: 4.25vh;
+    }
+     
+    .gameContainer {
+        width: 95vw;
+    }
+    
+    .top,
+    .bottom {
+        width: 95vw;
+    }
+
+    .top {
+        min-height: 50vh;
+        justify-content: center;
+    }
+
+    .right,
+    .left,
+    .center {
+        min-height: 75vh;
+    }
+
+    .top > div {
+        width: 47.5%;
+    }
+
+    .center {
+        width: 5% !important;
+    }
+
+}
+
+@media (max-width: 515px), (max-height: 575px) {
+    .top,
+    .bottom {
+        width: 95vw;
+    }
+
+    .right,
+    .left {
+        min-width: 0;
+    }
+
+    img {
+        min-height: 0 !important;
+    }
+
+}
+
+@media (max-height: 825px) {
+    footer > a {
+        font-size: 0;
+    }
+    
+    footer > p {
+        font-size: 2.5vh;
+    }
+
+    footer {
+        max-height: 3vh;
+        padding: 0.5vh;
+    }
+}
+
+@media (max-height: 825px), (max-width: 500px), (max-height: 950px) and (max-width: 950px) {
+    h1 {
+        margin: 10px 0;
+    }
+    
+    img {
+        max-height: 30vh;
+    }
+
+    .rightImg,
+    .leftImg {
+        height: 35vh;
+    }
+    
+    .right,
+    .center,
+    .left {
+        height: 42vh;
+        min-height: 42vh;
+    }
+
+    .top {
+        height: 42vh;
+        min-height: 42vh;
+    }
+
+    .computerName,
+    .playerName {
+        font-size: 12pt;
+    }
+
+}
+
+@media (max-height: 825px) {
+
+    footer > a {
+        font-size: 0;
+    }
+    
+    footer > p {
+        font-size: 2.5vh;
+    }
+
+    footer {
+        max-height: 3vh;
+        padding: 0.5vh;
+    }
+}
+
+@media (max-height: 450px) {
+
+    .description {
+        font-size: 0;
+        height: 0;
+        padding: 0;
+        width: 0;
+    }
+
+    .buttonsPlay {
+        padding-top: 10px;
+    }
+
+    .bottom {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-height: 400px), (max-width: 320px) {
+
+    h1 {
+        margin: 5px 0;
+        font-size: 4vh;
+    }
+
+    .bottom {
+        gap: 5px;
+        padding-bottom: 5px;
+    }
+
+    .buttonsPlay {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 340px) {
+    .computerName,
+    .playerName {
+        font-size: 10pt;
+        white-space: nowrap;
+    }
+}

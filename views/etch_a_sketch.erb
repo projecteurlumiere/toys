@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link href="/css/etch.css" rel="stylesheet">
+    <script defer src="/js/etch.js"></script>
+</head>
+<body>
+    <header>
+        <h1>&nbspEtch-a-Sketch&nbsp</h1>
+    </header>
+    <main>
+        <div class="paintContainer">
+            <div class="settings-top">
+                <div class="colorContainer">
+                    <div class="optionName">color</div>
+                    <input class="color" type="color" id="head" name="head" value="#000000">
+                    <div class="buttonsContainer">
+                        <button class="paintCustomButton">custom</button>
+                        <button class="paintRandomButton">random</button>
+                    </div>
+                </div>
+                <div class="eraserContainer">
+                    <div class="optionName">eraser</div>
+                    <button class="eraser"></button>
+                </div>
+                <div class="backgroundColorContainer">
+                    <div class="optionName">background color</div>
+                    <input class="colorBackground" type="color" id="head" name="head" value="#FFFFFF">
+                </div>
+            </div>
+            <div class="largeContainer"></div>
+            <div class="settings-bottom">
+                <div class="sliderContainer">
+                    <input type="range" class="slider" value="16" min="1" max="100"></input>
+                    <p><span class="px"></span>px</p>
+                </div>
+                <div class="resetContainer">
+                    <button class="reset">reset</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>2023</p>
+    </footer>
+</body>
+</html>
